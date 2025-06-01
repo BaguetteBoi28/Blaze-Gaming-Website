@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blaze Gaming - Best Videogame Offers and News</title>
+    <link rel="stylesheet" href="../css/main-style.css">
+    <link rel="stylesheet" href="../css/game-style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="../assets/images/brand/Blaze-Gaming-Logo.png"></a>
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="news.html">NEWS</a>
+            <a href="esports.html">ESPORTS</a>
+            <a href="games.html">GAMES</a>
+            <a href="events.html">EVENTS</a>
+        </nav>
+        <div id="profile">
+            <button id="signup" onclick="window.location.href='auth.html?mode=signup'">Sign Up</button>
+            <button id="login" onclick="window.location.href='auth.html?mode=login'">Log In</button>
+        </div>    
+    </header>
+    <div id="newsletter">
+        <p>Subscribe to <br>our Newsletter!</p>
+        <form>
+            <input id="email-input" type="email">
+            <input id="button-input" type="submit" value="Subscribe">
+        </form>
+        <button id="btnDelete" onclick="removeNewsletter()">X</button>
+    </div>
+    <div id="main">
+        <article>
+            <h2>Top Sellers</h2>
+            <div class="catalog">
+                <div class="game">
+                    <img src="../assets/images/games/2k25.jpg">
+                    <div><p>2K25</p></div>
+                </div>
+                <div class="game">
+                    <img src="../assets/images/games/Elden-Ring.jpg">
+                    <div><p>Elden Ring</p></div>
+                </div>
+                <div class="game">
+                    <img src="../assets/images/games/Crusader-Kings-3.jpg">
+                    <div><p>Crusader Kings III</p></div>
+                </div>
+                <div class="game">
+                    <img src="../assets/images/games/God-of-War-R.jpg">
+                    <div><p>God of War Ragnarök</p></div>
+                </div>
+            </div>
+        </article>
+        <article>
+            <h2>New Releases</h2>
+            <div class="catalog">
+                <div class="game">
+                    <img src="../assets/images/games/Haste.jpg">
+                    <div><p>Haste</p></div>
+                </div>
+                <div class="game">
+                    <img src="../assets/images/games/Repo.jpg">
+                    <div><p>R.E.P.O.</p></div>
+                </div>
+                <div class="game">
+                    <img src="../assets/images/games/Lost-Skies.jpg">
+                    <div><p>Lost Skies</p></div>
+                </div>
+                <div class="game">
+                    <img src="../assets/images/games/AC-Shadows.jpg">
+                    <div><p>Assassin's Creed Shadows</p></div>
+                </div>
+            </div>
+        </article>
+        <article>
+            <h2>Most Popular</h2>
+            <div class="catalog">
+                <div class="game">
+                    <img src="../assets/images/games/The -Witcher-3.jpg">
+                    <div><p>The Witcher 3</p></div>
+                </div>
+                <div class="game">
+                    <img src="../assets/images/games/Minecraft.jpg">
+                    <div><p>Minecraft</p></div>
+                </div>
+                <div class="game">
+                    <img src="../assets/images/games/RDR2.jpg">
+                    <div><p>Read Dead Redemption 2</p></div>
+                </div>
+                <div class="game">
+                    <img src="../assets/images/games/Titanfall-2.jpg">
+                    <div><p>Titanfall 2</p></div>
+                </div>
+            </div>
+        </article>
+    </div>
+    <footer>
+        <p>blazegaming@yahoo.com</p>
+        <p>&COPY; Blaze Gaming</p>
+    </footer>
+    <script src="../javascript/main-script.js"></script>
+</body>
+</html>

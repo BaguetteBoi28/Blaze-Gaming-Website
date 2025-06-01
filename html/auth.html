@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up - Blaze Gaming</title>
+    <link rel="stylesheet" href="../css/SLform-style.css">
+</head>
+<body>
+    <div id="background"></div>
+    <div id="signup">
+        <a class="image" href="index.html"></a>
+        <form>
+            <input id="name" type="text" placeholder="Name">
+            <input id="surname" type="text" placeholder="Surname">
+            <input class="email" type="email" placeholder="E-mail">
+            <div class="pass-box">
+                <input class="password" type="password" placeholder="Password">
+                <div class="checkbox-wrapper">
+                    <input class="password-check" type="checkbox" onchange="revealSignup()">
+                    <span class="checkbox-face"></span>
+                </div>
+            </div>
+            <div class="extra">
+                <div id="remember">
+                    <input type="checkbox">
+                    <span></span>
+                </div>
+                <p>Already have an account? <a href="auth.html?mode=login">Log in!</a></p>
+            </div>
+            <input class="submit-form" type="submit" value="Sign Up">
+        </form> 
+    </div>
+    <div id="login">
+        <a class="image" href="index.html"></a>
+        <form>
+            <input class="email" type="email" placeholder="E-mail">
+            <div class="pass-box">
+                <input class="password" type="password" placeholder="Password">
+                <div class="checkbox-wrapper">
+                    <input class="password-check" type="checkbox" onchange="revealLogin()">
+                    <span class="checkbox-face"></span>
+                </div>
+            </div>
+            <div class="extra">
+                <p></p>
+                <p>New here? <a href="auth.html?mode=signup">Sign up!</a></p>
+            </div>
+            <input class="submit-form" type="submit" value="Log In">
+        </form>
+    </div>
+    <script src="../javascript/SLform-script.js"></script>
+</body>
+</html>

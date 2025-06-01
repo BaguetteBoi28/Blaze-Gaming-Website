@@ -1,0 +1,122 @@
+#main {
+    margin: auto;
+    width: 60%;
+    height: 100%;
+    display: grid;
+    background-color: #0f1423;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: 
+        "article1 article2"
+        "article3 article4";
+}
+
+article {
+    margin: auto;
+    border: 1px solid teal;
+    position: relative;
+    width: 90%;
+    height: 90%;
+    display: flex;
+    align-items: end;
+    overflow: hidden;
+    border-radius: 10px;
+    div {
+        transition: filter 0.4s ease;
+    }
+    aside {
+        background-color: #121a2f;
+        width: 100%;
+        height: 55px;
+        overflow-y: hidden;
+        z-index: 90;
+        display: grid;
+        grid-template-columns: 20% 30% 50%;
+        grid-template-rows: 55px auto 50px;
+        grid-template-areas: 
+            "title title title"
+            "text text text"
+            "date . author";
+        border: 2px solid teal;
+        a {
+            grid-area: title;
+            text-transform: capitalize;
+            color: #ff5858;
+            text-transform: capitalize;
+            text-decoration: none;
+            font-size: 1.2em;
+            padding: 5px 0 0 10px;
+            align-self: center;
+        }
+        .text {
+            grid-area: text;
+            font-family: sans-serif;
+            color: #f5f5f5;
+            transition: opacity 0.3s ease;
+            padding: 0 20px 0 10px;
+        }
+        .date {
+            grid-area: date;
+            color: #ffffff;
+            opacity: 40%;
+            padding-left: 20px;
+        }
+        .author {
+            grid-area: author;
+            color: #ffffff;
+            opacity: 40%;
+        }
+        transition: height 0.3s ease;
+    }
+}
+article aside a:hover {
+    color: rgb(255,37,144);
+    text-decoration: underline;
+}
+article:hover {
+    div {
+        filter: blur(10px);
+    }
+    aside {
+        height: 95%;
+    }
+}
+
+#article1 {
+    grid-area: article1;
+}
+#image1 {
+    background: url("../assets/images/news/elden-ring-news.avif") center no-repeat;
+    background-size: cover;
+}
+
+#article2 {
+    grid-area: article2;
+}
+#image2 {
+    background: url("../assets/images/news/marvel-rivals-news.avif") center no-repeat;
+    background-size: cover;
+}
+
+#article3 {
+    grid-area: article3;
+}
+#image3 {
+    background: url("../assets/images/news/wh-boltgun-news.avif") center no-repeat;
+    background-size: cover;
+}
+
+#article4 {
+    grid-area: article4;
+}
+#image4 {
+    background: url("../assets/images/news/cod-warzone-news.avif") center no-repeat;
+    background-size: cover;
+}
+
+article > div {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+

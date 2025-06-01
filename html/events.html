@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blaze Gaming - Best Videogame Offers and News</title>
+    <link rel="stylesheet" href="../css/main-style.css">
+    <link rel="stylesheet" href="../css/events-style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="../assets/images/brand/Blaze-Gaming-Logo.png"></a>
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="news.html">NEWS</a>
+            <a href="esports.html">ESPORTS</a>
+            <a href="games.html">GAMES</a>
+            <a href="events.html">EVENTS</a>
+        </nav>
+        <div id="profile">
+            <button id="signup" onclick="window.location.href='auth.html?mode=signup'">Sign Up</button>
+            <button id="login" onclick="window.location.href='auth.html?mode=login'">Log In</button>
+        </div>    
+    </header>
+    <div id="newsletter">
+        <p>Subscribe to <br>our Newsletter!</p>
+        <form>
+            <input id="email-input" type="email">
+            <input id="button-input" type="submit" value="Subscribe">
+        </form>
+        <button id="btnDelete" onclick="removeNewsletter()">X</button>
+    </div>
+    <div id="main">
+        <article id="a1">
+            <div id="image1"></div>
+            <div>
+                <h2>Norwich Games Festival 2025</h2>
+                <p class="location">The Forum, Norwich, United Kingdom</p>
+                <p class="date">May 26, 2025 - May 31, 2025</p>
+                <a class="link" href="https://norwichgamesfestival.co.uk/">LINK <</a>
+            </div>
+        </article>
+        <article id="a2">
+            <div id="image2"></div>
+            <div>
+                <h2>TwitchCon Rotterdam 2025</h2>
+                <p class="location">Rotterdam Ahoy, Netherlands</p>
+                <p class="date">May 31, 2025 - June 1, 2025</p>
+                <a class="link" href="https://www.twitchcon.com/rotterdam-2025">LINK <</a>
+            </div>
+        </article>
+        <article id="a3">
+            <div id="image3"></div>
+            <div>
+                <h2>Summer Game Fest 2025</h2>
+                <p class="location">YouTube Theatre, Los Angeles, California, United States</p>
+                <p class="date">June 6, 2025 - June 6, 2025</p>
+                <a class="link" href="https://www.summergamefest.com/">LINK <</a>
+            </div>
+        </article>
+        <article id="a4">
+            <div id="image4"></div>
+            <div>
+                <h2>IGN Live 2025</h2>
+                <p class="location">The Reef, Los Angeles, California, United States</p>
+                <p class="date">June 7, 2025 - June 8, 2025</p>
+                <a class="link" href="https://www.ign.com/live/">LINK <</a>
+            </div>
+        </article>
+    </div>
+    <footer>
+        <p>blazegaming@yahoo.com</p>
+        <p>&COPY; Blaze Gaming</p>
+    </footer>
+    <script src="../javascript/main-script.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blaze Gaming - Best Videogame Offers and News</title>
+    <link rel="stylesheet" href="../css/main-style.css">
+    <link rel="stylesheet" href="../css/index-style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="../assets/images/brand/Blaze-Gaming-Logo.png"></a>
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="news.html">NEWS</a>
+            <a href="esports.html">ESPORTS</a>
+            <a href="games.html">GAMES</a>
+            <a href="events.html">EVENTS</a>
+        </nav>
+        <div id="profile">
+            <button id="signup" onclick="window.location.href='auth.html?mode=signup'">Sign Up</button>
+            <button id="login" onclick="window.location.href='auth.html?mode=login'">Log In</button>
+        </div>    
+    </header>
+    <div id="newsletter">
+        <p>Subscribe to <br>our Newsletter!</p>
+        <form>
+            <input id="email-input" type="email">
+            <input id="button-input" type="submit" value="Subscribe">
+        </form>
+        <button id="btnDelete" onclick="removeNewsletter()">X</button>
+    </div>
+    <div id="main">
+        <aside></aside>
+        <div id="text">
+            <article>
+                <h2>News</h2>
+                <p>Stay up to date with the latest game updates and industry announcements.</p>
+            </article>
+            <article>
+                <h2>Events</h2>
+                <p>Discover upcoming expos, game showcases, and community gatherings happening around the world.</p>
+            </article>
+            <article>
+                <h2>Esports</h2>
+                <p>Follow major tournaments, team rankings, and competitive matches from your favourite games.</p>
+            </article>
+        </div>
+        <aside></aside>
+    </div>
+    <footer>
+        <p>blazegaming@yahoo.com</p>
+        <p>&COPY; Blaze Gaming</p>
+    </footer>
+    <script src="../javascript/main-script.js"></script>
+</body>
+</html>

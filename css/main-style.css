@@ -1,0 +1,162 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    font-family:sans-serif ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-color: rgb(2, 8, 23);
+
+}
+
+/* HEADER */
+header {
+    z-index: 99;
+    background-color: rgb(31, 0, 0);
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid rgb(255, 37, 144)
+}
+
+header a {
+    margin-left: 30px;
+}
+header a img {
+    height: 150px;
+    position: relative;
+    top: 0;
+    transition: top 0.1s ease;
+}
+header a img:hover {
+    top: -5px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav a {
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    width: 80px;
+    height: 20px;
+    font-size: 1.1em;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+    border-left: 2px solid rgb(255, 37, 144);
+}
+header nav a:hover {
+    color: rgb(31, 0, 0);
+    background: rgb(255, 88, 88);
+    transition: 0.3s ease-in-out;
+}
+
+#profile {
+    margin-right: 50px;
+    width: 150px;
+    display: flex;
+}
+#profile button {
+    cursor: pointer;
+    margin-right: 10px;
+    width: 70px;
+    height: 40px;
+    font-weight: 600;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+#profile button:hover {
+    scale: 1.1;
+}
+#profile #signup {
+    width: 80px;
+    background-color: rgb(255, 88, 88);
+    color: rgb(31, 0, 0);
+}
+#profile #login {
+    color: rgb(255, 88, 88);
+    border: 2px solid rgb(255, 88, 88);
+    background-color: rgb(31, 0, 0);
+}
+
+/*NEWSLETTER*/
+#newsletter {
+    z-index: 98;
+    background-color: rgba(255, 88, 88,0.5);
+    position: absolute;
+    display: flex;
+    height: 60px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    top: 100px;
+    transition: top 1s ease;
+}
+#newsletter.after {
+    top: 0;
+}
+#newsletter p {
+    margin-left: 40px;
+    color: white;
+    text-align: center;
+    font-weight: 600;
+    font-style: italic;
+}
+#newsletter form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#email-input {
+    padding-left: 10px;
+    height: 30px;
+    width: 200px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    border: 3px solid rgb(255, 88, 88);
+}
+#email-input:focus {
+    outline: none;
+}
+#button-input {
+    height: 38px;
+    border: none;
+    color: white;
+    font-weight: 600;
+    background-color: rgb(255, 88, 88);
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+#newsletter button {
+    cursor: pointer;
+    margin-right: 25px;
+    border: none;
+    font-size: 1.2em;
+    background: none;
+    color: white;
+}
+
+/*FOOTER*/
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+    background-color: rgb(31, 0, 0);
+    border-top: 3px solid rgb(255, 37, 144);
+}
+footer p {
+    color: white;
+    opacity: 0.5;
+    font-size: 0.9em;
+}

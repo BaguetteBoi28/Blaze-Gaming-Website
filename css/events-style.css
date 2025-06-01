@@ -1,0 +1,88 @@
+#main {
+    margin: auto;
+    width: 60%;
+    height: 100%;
+    background-color: rgba(20, 20, 30, 0.85);
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: 
+        "a1 a2"
+        "a3 a4";
+}
+
+article {
+    display: flex;
+    position: relative;
+    height: 70%;
+    width: 90%;
+    margin: auto;
+    border: 1px solid teal;
+    overflow: hidden;
+    border-radius: 10px;
+    div:first-child {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        filter: none;
+        transition: filter 0.3s ease;
+    }
+    div:last-child {
+        position: relative;
+        border: 1px solid teal;
+        border-top-width: 3px;
+        z-index: 99;
+        width: 100%;
+        height: 40px;
+        align-self: flex-end;
+        background: #121a2f;
+        transition: height 0.4s ease;
+        h2 {
+            margin: 0;
+            padding: 10px 0 0 20px;
+            color: rgb(255,88,88);
+        }
+        p {
+            padding-left: 20px;
+            color: darkgray;
+            font-size: 0.9em;
+        }
+        a {
+            margin-left: 20px;
+            padding: 5px;
+            text-decoration: none;
+            background: rgb(255,88,88);
+            color: #121a2f;
+            font-weight: bold;
+        }
+    }
+}
+#image1 {
+    background: url("../assets/images/events/norwich-game-festival-events.png") no-repeat;
+    background-size: 401px 202px;
+}
+#image2 {
+    background: url("../assets/images/events/twitchcon-rotterdam-events.jpg") no-repeat;
+    background-size: 401px 202px;
+}
+#image3 {
+    background: url("../assets/images/events/summer-game-fest-events.webp") no-repeat;
+    background-size: 401px 202px;
+}
+#image4 {
+    background: url("../assets/images/events/ign-live-events.webp") no-repeat;
+    background-size: 401px 202px;
+}
+
+article:hover {
+    div:first-child {
+        filter: blur(5px);
+    }
+    div:last-child {
+        height: 150px;
+        
+    }
+}
+.link:hover {
+    background: rgb(255,37,144);
+}

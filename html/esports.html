@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blaze Gaming - Best Videogame Offers and News</title>
+    <link rel="stylesheet" href="../css/main-style.css">
+    <link rel="stylesheet" href="../css/esports-style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="../assets/images/brand/Blaze-Gaming-Logo.png"></a>
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="news.html">NEWS</a>
+            <a href="esports.html">ESPORTS</a>
+            <a href="games.html">GAMES</a>
+            <a href="events.html">EVENTS</a>
+        </nav>
+        <div id="profile">
+            <button id="signup" onclick="window.location.href='auth.html?mode=signup'">Sign Up</button>
+            <button id="login" onclick="window.location.href='auth.html?mode=login'">Log In</button>
+        </div>    
+    </header>
+    <div id="newsletter">
+        <p>Subscribe to <br>our Newsletter!</p>
+        <form>
+            <input id="email-input" type="email">
+            <input id="button-input" type="submit" value="Subscribe">
+        </form>
+        <button id="btnDelete" onclick="removeNewsletter()">X</button>
+    </div>
+    <div id="main">
+        <article>
+            <span>
+                <h2>Valorant</h2>
+                <img src="../assets/images/esports/valorant.jpg">
+                <p></p>
+            </span>
+            <div>
+                <img class="img1" height="30px" width="30px" src="../assets/images/esports/yfp-val.png">
+                <p class="team1">YFP X</p>
+                <p class="content">23.05.2025 2PM PT - Upper Bracket Quarterfinals</p>
+                <p class="team2">FlyQuest RED</p>
+                <img class="img2" height="30px" width="30px" src="../assets/images/esports/fqr-val.png">
+            </div>
+            <div>
+                <img class="img1" height="30px" width="30px" src="../assets/images/esports/wadadaa-val.png">
+                <p class="team1">Wadadaa</p>
+                <p class="content">23.05.2025 2PM PT - Upper Bracket Quarterfinals</p>
+                <p class="team2">Ghost Gaming</p>
+                <img class="img2" height="30px" width="30px" src="../assets/images/esports/gg-val.png">
+            </div>
+            <div>
+                <img class="img1" height="30px" width="30px" src="../assets/images/esports/a&f-val.png">
+                <p class="team1">Aussie & Friends</p>
+                <p class="content">23.05.2025 2PM PT - Upper Bracket Quarterfinals</p>
+                <p class="team2">Teevee</p>
+                <img class="img2" height="30px" width="30px" src="../assets/images/esports/teevee-val.png">
+            </div>
+        </article>
+        <article>
+            <span>
+                <h2>Counter Strike 2</h2>
+                <img src="../assets/images/esports/csgo.png">
+                <p></p>
+            </span>
+            <div>
+                <img class="img1" height="30px" width="30px" src="../assets/images/esports/vitality-cs2.png">
+                <p class="team1">Vitality</p>
+                <p class="content">Upper Semifinals Group A - 20.05.2025</p>
+                <p class="team2">GamerLegion</p>
+                <img class="img2" height="30px" width="30px" src="../assets/images/esports/gl-cs2.png">
+            </div>
+            <div>
+                <img class="img1" height="30px" width="30px" src="../assets/images/esports/mouz-cs2.png">
+                <p class="team1">MOUZ</p>
+                <p class="content">Upper Semifinals Group B - 20.05.2025</p>
+                <p class="team2">Liquid</p>
+                <img class="img2" height="30px" width="30px" src="../assets/images/esports/liquid-cs2.png">
+            </div>
+            <div>
+                <img class="img1" height="30px" width="30px" src="../assets/images/esports/heroic-cs2.png">
+                <p class="team1">HEROIC</p>
+                <p class="content">Upper Semifinals Group B - 20.05.2025</p>
+                <p class="team2">Falcons</p>
+                <img class="img2" height="30px" width="30px" src="../assets/images/esports/falcons-cs2.png">
+            </div>
+        </article>
+        <article>
+            <span>
+                <h2>League of Legends</h2>
+                <img src="../assets/images/esports/lol.jpg">
+                <p></p>
+            </span>
+            <div>
+                <img class="img1" height="30px" width="30px" src="../assets/images/esports/ns-lol.png">
+                <p class="team1">Nongshim RedForce</p>
+                <p class="content">23.05.2025 07:00</p>
+                <p class="team2">DN Freecs</p>
+                <img class="img2" height="30px" width="30px" src="../assets/images/esports/dnf-lol.png">
+            </div>
+            <div>
+                <img class="img1" height="30px" width="30px" src="../assets/images/esports/dk-lol.png">
+                <p class="team1">Dplus KIA</p>
+                <p class="content">23.05.2025 07:00</p>
+                <p class="team2">DRX</p>
+                <img class="img2" height="30px" width="30px" src="../assets/images/esports/drx-lol.png">
+            </div>
+            <div>
+                <img class="img1" height="30px" width="30px" src="../assets/images/esports/tsw-lol.png">
+                <p class="team1">Team Secret Whales</p>
+                <p class="content">23.05.2025 11:30</p>
+                <p class="team2">The Chiefs eSports Club</p>
+                <img class="img2" height="30px" width="30px" src="../assets/images/esports/chf-lol.png">
+            </div>
+        </article>
+    </div>
+    <footer>
+        <p>blazegaming@yahoo.com</p>
+        <p>&COPY; Blaze Gaming</p>
+    </footer>
+    <script src="../javascript/main-script.js"></script>
+</body>
+</html>
