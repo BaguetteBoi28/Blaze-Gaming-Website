@@ -8,14 +8,16 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 #background {
+    overflow: hidden;
     position: absolute;
     width: 100vw;
     height: 100vh;
     background: url("../assets/images/extra/people-playing.jpg") no-repeat left, url("../assets/images/extra/tournament.jpg") no-repeat right;
-    background-size: 50% 100%;
+    background-size: 50% 800px;
     filter: blur(5px) grayscale(100%);
 }
 

@@ -1,9 +1,5 @@
 #main {
-    margin: auto;
-    width: 60%;
-    height: 100%;
     display: grid;
-    background-color: #0f1423;
     grid-template-columns: 50% 50%;
     grid-template-rows: 50% 50%;
     grid-template-areas: 
