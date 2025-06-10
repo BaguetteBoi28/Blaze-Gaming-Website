@@ -1,9 +1,5 @@
 #main {
-    width: 60%;
-    height: 100%;
-    margin: auto;
     display: flex;
-    background-color: rgba(20, 20, 30, 0.85);
     backdrop-filter: blur(6px);
 }
 
